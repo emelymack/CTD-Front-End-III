@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando JSX con Gonza y Sophie</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+            
+    <div id="root"></div>
+    <script type="text/babel">
+       
+       const lista=[
+        "hamburguesas",
+        "gaseosas",
+        "empanadas",
+        "alfajores"
+        ]
+
+        function Productos(props) {
+
+            const elements = props.producto.map((prod)=>
+            <li>{prod}</li>
+            );
+            const listado=
+            <div>
+                <h2>Lista de productos</h2>
+                <ul>{elements}</ul>
+            </div>
+            
+            return listado;
+
+        }
+
+        ReactDOM.render(
+            <Productos producto={lista} />,document.getElementById("root")
+
+        );
+
+
+       // let nombre=prompt("Ingrese su nombre");
+        // const lista=
+        // <div>
+        //     <h1>Hola, Bienvenid@ {nombre}</h1>
+        //     <h2>Lista de Productos</h2> 
+        //     <ul>
+        //         <li>Hamburguesas</li>
+        //         <li>Pizzas</li>
+        //         <li>Empanadas</li>
+        //     </ul>   
+        // </div>
+
+        // ReactDOM.render(lista,document.getElementById("root"))
+
+    </script>
+</body>
+</html>

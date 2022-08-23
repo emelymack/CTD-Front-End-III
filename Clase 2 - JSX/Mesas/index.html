@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>Frontend III Ejercicio práctico clase 1</title>
+    </head>
+    <body>
+    <div id="root">
+        <h1>Lista de Productos en stock:</h1>
+        <ul>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Naranja</li>
+            <li>Banana</li>
+            <li>Kiwi</li>
+        </ul>
+        <h2>Productos en falta:</h2>
+        <ul>
+            <li>Durazno</li>
+            <li>Cereza</li>
+            <li>Anana</li>
+        </ul>
+    </div>
+
+    <script type="text/babel">
+
+        const lista1 = [
+            "Manzana",
+            "Pera",
+            "Naranja",
+            "Banana",
+            "Kiwi"
+        ]
+
+        const lista2 = [
+            "Durazno",
+            "Cereza",
+            "Ananá"
+        ]
+
+        function Productos(props){
+            const elementos1 = props.producto1.map((prod1) => <li>{prod1}</li>);
+            const elementos2 = props.producto2.map((prod2) => <li>{prod2}</li>);
+
+            const listado = 
+            <div>
+                <h1>Lista de Productos en stock:</h1>
+                <ul>{elementos1}</ul>
+                <h2>Productos en falta:</h2>
+                <ul>{elementos2}</ul>
+            </div>
+            return listado;
+        }
+
+        ReactDOM.render(
+            <Productos producto1={lista1} producto2={lista2}/>, document.getElementById("root")
+        )
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

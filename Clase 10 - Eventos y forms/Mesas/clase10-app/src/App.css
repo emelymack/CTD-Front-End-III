@@ -1,0 +1,51 @@
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.App {
+  background-color: rgb(128, 173, 216);
+  text-align: center;
+  margin: 20px;
+}
+
+.Form{
+  background-color: rgb(110, 240, 240);
+  font-size: large;
+  height: fit-content;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.Titulo{
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 20px;
+  
+}
+
+.Lista{
+  list-style: none;
+}
+
+.Lista li{
+  border: 1px solid rgb(13, 50, 218);
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+.Boton{
+  border-radius: 3px;
+  background-color: #008CBA;
+  border: 2px solid #008CBA;
+  color: white;
+  padding: 15px 32px;
+  font-family: inherit;
+}
+
+.Boton:hover {
+  background-color: white;
+  color: #008CBA;
+  font-weight: 700;
+}
