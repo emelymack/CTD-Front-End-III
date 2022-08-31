@@ -1,0 +1,4 @@
+ejercicio de FETCH a una API de fotos de perros, usamos Fetch
+
+programamos un "Loading" para que aparezca mientras que el llamado a la API 
+se ejecuta
