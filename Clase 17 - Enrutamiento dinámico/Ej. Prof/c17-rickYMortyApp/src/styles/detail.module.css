@@ -1,0 +1,34 @@
+body{
+  background-size:auto;
+}
+
+.name {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.detailContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.characterImg{
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.characterText{
+  margin-top: 20px !important;
+  color: #FFFFFF;
+  background-color:dimgray;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
