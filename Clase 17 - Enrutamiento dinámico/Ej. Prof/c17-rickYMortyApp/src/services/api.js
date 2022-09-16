@@ -6,6 +6,7 @@ export const getCharacters = async(page =null) => {
   const endpoint = `${baseUrl}character/${page ? `?page=${page}` : ''}`;
   const response = await axios.get(endpoint);
   console.log(response);
+  console.log(response.data.results);
   return response.data.results;
 }
 

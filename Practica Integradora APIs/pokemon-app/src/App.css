@@ -1,0 +1,13 @@
+body{
+  margin: 50px;
+}
+
+.App {
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
