@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./components/Home";
 import BuscarPokemon from "./components/BuscarPokemon";
-import { ListarTodos } from "./components/ListarTodos";
+import ListarTodos from "./components/ListarTodos";
 
 
 function App() {
@@ -10,9 +10,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='buscar' element={<BuscarPokemon />} />
-          <Route path='verTodos' element={<ListarTodos />} />
+          <Route path='/' element={<Home />} >
+            <Route path='buscar' element={<BuscarPokemon />} />
+            <Route path='verTodos' element={<ListarTodos />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
