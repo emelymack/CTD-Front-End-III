@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Home() {
     return(
@@ -9,6 +9,8 @@ export default function Home() {
                 <Link to="/buscar">Buscar pokemon</Link>
                 <Link to="/verTodos">Ver todos los pokemones</Link>
             </nav>
+
+            <Outlet/>
         </div>
     )
 }
