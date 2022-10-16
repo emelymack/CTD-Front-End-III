@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import BuscarPokemon from "./components/BuscarPokemon";
 import ListarTodos from "./components/ListarTodos";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
